@@ -3,9 +3,13 @@ import { name, internet } from "faker";
 
 const publisher = createClient();
 
+/**
+ * Sends a message with a random id, name and email to a random category
+ * Categories are an index from 1 - 9
+ */
 function send() {
   const id = Math.ceil(Math.random() * 9999999);
-  const cat = Math.ceil(Math.random() * 10);
+  const cat = Math.ceil(Math.random() * 9);
   const message = {
     id,
     cat,

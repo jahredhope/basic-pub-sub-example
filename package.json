@@ -1,0 +1,21 @@
+{
+  "name": "basic-pub-sub-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jahred Hope <jahredhope@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "subscriber": "ts-node subscriber.ts",
+    "publisher": "ts-node publisher.ts",
+    "server": "docker run --rm --name pub-sub-redis -p 6379:6379 redis"
+  },
+  "dependencies": {
+    "@types/faker": "^4.1.12",
+    "@types/redis": "^2.8.22",
+    "faker": "^4.1.0",
+    "nodemon": "^2.0.4",
+    "redis": "^3.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
+}
